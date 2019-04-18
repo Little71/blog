@@ -1,3 +1,4 @@
+from flask_login import UserMixin
 from sqlalchemy import Column, Integer, String, ForeignKey
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -5,7 +6,7 @@ from app import login_manager
 from app.models.base import Base
 
 
-class User(Base):
+class User(UserMixin,Base):
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True)
     email = Column(String(64), unique=True, index=True)
@@ -15,7 +16,7 @@ class User(Base):
 
     @property
     def password(self):
-        raise NotImplementedError('password is not a readable attribute ')
+        raise AttributeError('password is not a readable attribute ')
 
     @password.setter
     def password(self, password):
@@ -26,7 +27,6 @@ class User(Base):
 
     def __repr__(self):
         return '<User %r>' % self.username
-
 
 @login_manager.user_loader
 def load_user(user_id):

@@ -18,12 +18,11 @@ class SQLAlchemy(_SQLAlchemy):
 
 class Query(BaseQuery):
     def filter_by(self, **kwargs):
-        kwargs['state'] = 1
+        kwargs['status'] = 1
         return super().filter_by(**kwargs)
 
 
-db = _SQLAlchemy(query_class=Query)
-
+db = SQLAlchemy(query_class=Query)
 
 class Base(db.Model):
     __abstract__ = True
@@ -40,5 +39,6 @@ class Base(db.Model):
 
     def set_attr(self, attr_dict):
         for k, v in attr_dict.items():
+            print(hasattr(self, k),k)
             if hasattr(self, k) and k not in ['id']:
                 setattr(self, k, v)

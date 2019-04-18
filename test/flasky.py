@@ -8,6 +8,7 @@ from app.models import user, role
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 migrate = Migrate(app, db)
+print(app.debug)
 
 
 @app.shell_context_processor
@@ -21,3 +22,6 @@ def test():
     import unittest
     tests = unittest.TestLoader().discover('tests')
     unittest.TextTestRunner(verbosity=2).run(tests)
+
+if __name__ == '__main__':
+    app.run()
