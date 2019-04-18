@@ -6,7 +6,15 @@
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}"
           type="image/x-icon">
 {% endblock %}
-{% block title %}Flasky{% endblock %}
+{% block title %}Flasky
+    <ul class="nav navbar-nav navbar-right">
+        {% if current_user.is_authenticated %}
+            <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
+        {% else %}
+            <li><a href="{{ url_for('auth.login') }}">Log In</a></li>
+        {% endif %}
+    </ul>
+{% endblock %}
 {% block navbar %}
     <div class="navbar navbar-inverse" role="navigation">
         <div class="container">
