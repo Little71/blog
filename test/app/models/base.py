@@ -39,6 +39,5 @@ class Base(db.Model):
 
     def set_attr(self, attr_dict):
         for k, v in attr_dict.items():
-            print(hasattr(self, k),k)
             if hasattr(self, k) and k not in ['id']:
                 setattr(self, k, v)

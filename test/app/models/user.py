@@ -16,7 +16,7 @@ class User(UserMixin,Base):
 
     @property
     def password(self):
-        raise AttributeError('password is not a readable attribute ')
+        return self._password
 
     @password.setter
     def password(self, password):
@@ -31,3 +31,7 @@ class User(UserMixin,Base):
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
+
+
+if __name__ == '__main__':
+    u = User()
