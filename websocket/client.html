@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+</head>
+<body>
+	<script>
+	//创建webscoket的连接，内部隐含了连接ws的地址
+		ws = new WebScoket("ws://127.0.0.1:8002")
+		//连接成功会执行onopen
+		ws.onopen = function(){
+			console.log('')
+			ws.send('hello')
+		}
+		
+		ws.onmessage = function(event){
+			console.log(event)
+		}
+		
+		ws.onclose = function(){
+			console.log('服务端断开的时候会执行')
+		}
+	</script>
+</body>
+</html>
+
+
+
+
