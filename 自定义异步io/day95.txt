@@ -1,0 +1,105 @@
+爬虫性能相关
+https://www.cnblogs.com/wupeiqi/articles/6229292.html
+    
+    - 傻等，请求一个资源，等待io返回
+        response = requests.get(....)
+    - 机智，请求多个资源，在等待io返回
+        response = requests.get(....)
+        response = requests.get(....)
+        response = requests.get(....)
+        response = requests.get(....)
+    
+    角色：使用者
+        - 多线程
+        - 多线程
+        - 协程（微线程） + 异步IO =》 1个线程发送N个Http请求
+            - asyncio
+                - 示例1：asyncio.sleep(5)
+                - 示例2：自己封装Http数据包
+                - 示例3：asyncio+aiohttp
+                    aiohttp模块：封装Http数据包 pip3 install aiohttp
+                - 示例4：asyncio+requests
+                    requests模块：封装Http数据包 pip3 install requests
+            - gevent，greenlet+异步IO
+                    pip3 install greenlet
+                    pip3 install gevent
+                - 示例1：gevent+requests
+                - 示例2：gevent（协程池，最多发多少个请求）+requests
+                - 示例3：gevent+requests => grequests
+                        pip3 install grequests
+                
+            - Twisted
+                pip3 install twisted
+            - Tornado
+                pip3 install tornado
+            
+            =====> gevent > Twisted > Tornado > asyncio
+    角色：NB开发者
+        
+        1. socket客户端、服务端
+            连接阻塞
+            setblocking(0): 无数据（连接无响应；数据未返回）就报错
+            
+        2. IO多路复用
+            客户端：
+            try:
+                socket对象1.connet()
+                socket对象2.connet()
+                socket对象3.connet()
+            except Ex..
+                pass
+                
+            while True:
+				#监听3个socket对象
+                r,w,e = select.select([socket对象1,socket对象2,socket对象3,],[socket对象1,socket对象2,socket对象3,],[],0.05)
+                r = [socket对象1,] # 表示有人给我发送数据，第一个参数的监听的socket有变化赋值给r
+                    xx = socket对象1.recv()
+                w = [socket对象1,] # 表示我已经和别人创建连接成功:第二个参数的变化赋值给w
+                    socket对象1.send('"""GET /index HTTP/1.0\r\nHost: baidu.com\r\n\r\n"""')
+				
+				socket内部如发生异常，则e就会有值，即第三个参数
+				第四个参数表示只是等待0.05秒
+				
+        3. 
+            class Foo:
+            
+                def fileno(self):
+                    obj = socket()
+                    return obj.fileno()
+        
+            r,w,e = select.select([socket对象？,对象？,对象？,Foo()],[],[])
+            # 对象必须有： fileno方法，并返回一个文件描述符
+			本质上 select就是取对象的fileno方法的文件描述符，实际上内部还是一个socket对象
+            
+            ========
+            a. select内部本质就是：对象.fileno()
+            b. Foo()内部封装socket文件描述符
+			
+			
+			
+			io多路复用：r,w,e = while监听多个socket对象，本质上同步执行
+			
+			异步io：非阻塞异步io模型，非阻塞的socket+io多路复用 就是 异步io
+			sefblocking=False
+			r,w,e = select([自己对象,...],[..],[..],timtout)  实现伪并发
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
