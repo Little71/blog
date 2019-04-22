@@ -83,7 +83,14 @@ https://www.cnblogs.com/wupeiqi/articles/6229292.html
 			sefblocking=False
 			r,w,e = select([自己对象,...],[..],[..],timtout)  实现伪并发
     
-    
+
+        1、创建socket对象去连接目标地址，然后把连接的socket放到实例对象存放起来
+        2、通过select，io多路复用，去轮询每个socket的连接是否已经连上，是否能发送数据，是否有异常
+        3、获取select的返回值，遍历每个socket的情况，如连接上则发送请求，然后从实例对象删除连接socket
+        4、遍历每个接受数据/读取数据的socket，如有数据，则表明有返回，则读取数据，通过回调函数处理数据，然后返回，然后把存储的socket删除
+        5、如实例对象存储的接受数据的socket为空，则说明处理完成，退出循环，结束程序
+
+        过程中select，通过cpu调度，一个线程处理发起多个请求，实现伪并发
     
     
     
