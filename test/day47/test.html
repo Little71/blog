@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #id1{
+            width: 200px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<input type="text" id="id1" onclick="begin()">
+<input type="button" value="停止" onclick="f()" >
+<script>
+    var showtime = function(){
+        var cur_time = new Date().toLocaleString();
+        var ele = document.getElementById('id1');
+        ele.value = cur_time;
+
+    };
+
+    var c;
+    function begin(){
+        c =window.setTimeout(showtime,1000);
+    }
+
+    function f(){
+        //在还没有执行的情况下，取消这个一次性的任务
+        window.clearTimeout(c);
+    }
+
+    // var clock1;
+    // var begin = function (){
+    //     if (clock1 === undefined){
+    //         showtime();
+    //         clock1 = window.setInterval(showtime,1000);
+    //     }
+    // };
+    //
+    // var showtime = function(){
+    //     var cur_time = new Date().toLocaleString();
+    //     var ele = document.getElementById('id1');
+    //     ele.value = cur_time;
+    //
+    // };
+    //
+    // function f(){
+    //     window.clearInterval(clock1);
+    //     clock1 = undefined;
+    // }
+</script>
+</body>
+</html>
