@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<h4>数据列表</h4>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <table class="table table-bordered table-striped">
+                <thead></thead>
+                <tbody>
+                     {% for data in new_data_list %}
+
+                      <tr>
+                          {% for item in data %}
+                           <td>{{ item }}</td>
+                          {% endfor %}
+
+                      </tr>
+                     {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
