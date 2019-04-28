@@ -5,32 +5,56 @@
     <title>Title</title>
 </head>
 <body>
-
-<table border="1px solid">
-
-    <thead>
-    <tr>
-        <th>111</th>
-        <th>222</th>
-        <th>333</th>
-
-    </tr>
-
-    </thead>
-    <tbody>
-    <tr>
-        <td rowspan="2">444</td>
-        <td>555</td>
-        <td>666</td>
-
-    </tr>
-    <tr>
-        <td colspan="2">555</td>
-
-    </tr>
-
-    </tbody>
-</table>
+<form action="" method="post">
+    <input id="u" type="text" name="username"><label id="m"></label>
+    <input id="p" type="password" name="password">
+    <input type="submit" value="提交">
+</form>
 
 </body>
+
+<script src="jquery-3.1.1.js"></script>
+<script>
+    function createXMLHttpRequest() {
+        var xmlHttp;
+        // 适用于大多数浏览器，以及IE7和IE更高版本
+        try {
+            xmlHttp = new XMLHttpRequest();
+        } catch (e) {
+            // 适用于IE6
+            try {
+                xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                // 适用于IE5.5，以及IE更早版本
+                try {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {
+                }
+            }
+        }
+        return xmlHttp;
+    }
+
+    var username = document.getElementById('u').value;
+    var password = document.getElementById('p').value;
+
+    function send() {
+        var ajax_obj = createXMLHttpRequest();
+        ajax_obj.onreadystatechange = function () {
+            if (ajax_obj.readyState === 4 && ajax_obj.status === 200) {
+                if (ajax_obj.responseText.state === true) {
+                    document.getElementById('m').innerHTML = ajax_obj.responseText.msg
+                }
+                else {
+                    document.getElementById('m').innerHTML = ajax_obj.responseText.msg
+                }
+            }
+        };
+        ajax_obj.open('POST', '/', true, 'json');
+        xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xmlHttp.send("username=" + username, "password=" + password);
+    }
+
+
+</script>
 </html>
