@@ -5,11 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-<form action="" method="post">
-    <input id="u" type="text" name="username"><label id="m"></label>
-    <input id="p" type="password" name="password">
-    <input type="submit" value="提交">
-</form>
+<input id="u" type="text" name="username"><label id="m"></label>
+<input id="p" type="password" name="password">
+<input type="submit" value="提交" onclick="send()">
 
 </body>
 
@@ -35,23 +33,17 @@
         return xmlHttp;
     }
 
-    var username = document.getElementById('u').value;
-    var password = document.getElementById('p').value;
 
     function send() {
-        var ajax_obj = createXMLHttpRequest();
-        ajax_obj.onreadystatechange = function () {
-            if (ajax_obj.readyState === 4 && ajax_obj.status === 200) {
-                if (ajax_obj.responseText.state === true) {
-                    document.getElementById('m').innerHTML = ajax_obj.responseText.msg
-                }
-                else {
-                    document.getElementById('m').innerHTML = ajax_obj.responseText.msg
-                }
+        var xmlHttp = createXMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                alert(xmlHttp.responseText)
             }
         };
-        ajax_obj.open('POST', '/', true, 'json');
-        xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        var username = document.getElementById('u').value;
+        var password = document.getElementById('p').value;
+        xmlHttp.open('POST', 'http://127.0.0.1:5000/index', true, 'json');
         xmlHttp.send("username=" + username, "password=" + password);
     }
 
