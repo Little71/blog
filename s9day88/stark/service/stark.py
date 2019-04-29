@@ -39,23 +39,25 @@ class ModelStark(object):
     def change(self, request, id):
         pass
 
+    def new_list_display(self):
+        temp = []
+        temp.append(ModelStark.checkbox)
+        temp.extend(self.list_display)
+        temp.extend([ModelStark.edit, ModelStark.delete])
+        return temp
+
     def list_view(self, request):
         data_list = self.model.objects.all()
-        new_data_list = []
-        if self.list_display:
-            self.list_display.insert(0, checkbox)
-            self.list_display.extend(['edit', 'deletes'])
-            for obj in data_list:
-                temp = []
-                for field in self.list_display:
-                    if callable(field):
-                        varl = field(self, obj)
-                    else:
-                        varl = getattr(obj, field)
-                    temp.append(varl)
-                new_data_list.append(temp)
-        else:
-            new_data_list = data_list
+        new_data_list = ['__str__']
+        for obj in data_list:
+            temp = []
+            for field in self.new_list_display():
+                if callable(field):
+                    varl = field(self, obj)
+                else:
+                    varl = getattr(obj, field)
+                temp.append(varl)
+            new_data_list.append(temp)
         context = {'new_data_list': new_data_list}
         return render(request, 'list_view.html', context=context)
 
