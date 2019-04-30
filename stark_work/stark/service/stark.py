@@ -4,6 +4,8 @@ from django.conf.urls import url
 from django.shortcuts import HttpResponse, render, reverse, redirect, get_object_or_404
 from django.utils.safestring import mark_safe
 
+from stark.utils.page import page
+
 
 class ModelStark(object):
     list_display = ['__str__']
@@ -104,6 +106,7 @@ class ModelStark(object):
     def list_view(self, request):
         header_list = []
         add_url = self._get_url2("add")
+        list_url = self._get_url2("list")
         for field in self.get_header_list():
             if callable(field):
                 valh = field(self, header=True)
@@ -115,8 +118,12 @@ class ModelStark(object):
                 header_list.append(field)
 
         data_list = self.model.objects.all()
+        page_num = request.GET.get('page',1)
+
+        html_page, data_all = page(page_num, data_list, list_url)
+
         new_list_data = []
-        for obj in data_list:
+        for obj in data_all:
             temp = []
             for field in self.get_header_list():
                 if callable(field):
@@ -129,6 +136,7 @@ class ModelStark(object):
                         val = getattr(obj, field)
                 temp.append(val)
             new_list_data.append(temp)
+
         return render(request, 'list_view.html', locals())
 
     def get_url2(self):

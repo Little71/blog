@@ -18,14 +18,15 @@
         <div class="col-md-9">
             <table class="table table-bordered table-striped">
                 <thead>
+                <th>序号</th>
                 {% for header in header_list %}
                     <th>{{ header }}</th>
                 {% endfor %}
                 </thead>
                 <tbody>
                 {% for data in new_list_data %}
-
                     <tr>
+                    <td>{{ forloop.counter }}</td>
                         {% for item in data %}
                             <td>{{ item }}</td>
                         {% endfor %}
@@ -36,6 +37,7 @@
                 </tbody>
             </table>
         </div>
+    {% include 'page.html' %}
     </div>
 </div>
 <script>
