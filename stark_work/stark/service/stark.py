@@ -4,7 +4,7 @@ from django.conf.urls import url
 from django.shortcuts import HttpResponse, render, reverse, redirect, get_object_or_404
 from django.utils.safestring import mark_safe
 
-from stark.utils.page import pageing
+from stark.utils.page import Page
 
 
 class ModelStark(object):
@@ -118,9 +118,13 @@ class ModelStark(object):
                 header_list.append(field)
 
         data_list = self.model.objects.all()
-        page_num = request.GET.get('page',1)
+        page_num = request.GET.get('page', 1)
 
-        html_page, data_all,nextpage_url,prevpage_url = pageing(page_num, data_list, list_url)
+        page = Page(page_num, data_list,request.GET, url_prefix=list_url)
+
+        html_page = page.get_html()
+
+        data_all = page.get_data()
 
         new_list_data = []
         for obj in data_all:
