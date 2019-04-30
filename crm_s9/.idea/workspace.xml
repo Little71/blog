@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb5e2481-645c-48bd-8311-a595e8195ba3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/s9day88.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/.idea/s9day88.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../s9day88/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/app01/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/app01/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/app01/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/app01/stark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/s9day88/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/s9day88/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../s9day88/stark/service/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/stark/service/stark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s9day88/templates/list_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../s9day88/templates/list_view.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,14 +69,23 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-649025041">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1936">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="-1700">
+              <caret line="319" column="7" selection-start-line="319" selection-start-column="7" selection-end-line="319" selection-end-column="7" />
               <folding>
                 <element signature="e#19#51#0" expanded="true" />
                 <element signature="e#421#995#0" />
@@ -86,15 +94,6 @@
                 <element signature="e#3604#4382#0" />
                 <element signature="e#4416#5973#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stark/utils/page.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -133,10 +132,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="213" />
-    <option name="y" value="444" />
+    <option name="x" value="87" />
+    <option name="y" value="78" />
     <option name="width" value="1310" />
-    <option name="height" value="791" />
+    <option name="height" value="792" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -275,10 +274,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="213" y="444" width="1310" height="791" extended-state="0" />
+    <frame x="70" y="63" width="1048" height="633" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15353535" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -378,9 +377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#640#672#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -401,9 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -453,10 +446,17 @@
     <entry file="file://$PROJECT_DIR$/stark/templates/pop.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/stark/utils/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1936">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="-1700">
+          <caret line="319" column="7" selection-start-line="319" selection-start-column="7" selection-end-line="319" selection-end-column="7" />
           <folding>
             <element signature="e#19#51#0" expanded="true" />
             <element signature="e#421#995#0" />
@@ -465,13 +465,6 @@
             <element signature="e#3604#4382#0" />
             <element signature="e#4416#5973#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stark/utils/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
