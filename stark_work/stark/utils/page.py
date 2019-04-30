@@ -1,7 +1,7 @@
 from django.core.paginator import Paginator
 
 
-def page(page_num, data_list, list_url):
+def pageing(page_num, data_list, list_url):
     if page_num:
         page_num = int(page_num)
     per_page = 10
@@ -33,4 +33,7 @@ def page(page_num, data_list, list_url):
         html_list.append(f"<li><a href='{list_url}?page={i}'>{i}</a></li>")
 
     html_page = ''.join(html_list)
-    return html_page, data_all
+    nextpage_url = f"'{list_url}?page={int(page_num)+1}'"
+    prevpage_url = f"'{list_url}?page={int(page_num)-1}'"
+
+    return html_page, data_all, nextpage_url, prevpage_url

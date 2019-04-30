@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb5e2481-645c-48bd-8311-a595e8195ba3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../stark_work/stark/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stark_work/stark/utils/page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stark_work/templates/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/stark/service/stark.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/templates/list_view.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../stark_work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stark_work/app01/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/app01/stark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stark_work/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stark_work/stark/service/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/stark/service/stark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stark_work/stark/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/stark/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stark_work/templates/add_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/templates/add_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stark_work/templates/delete_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/templates/delete_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stark_work/templates/list_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/templates/list_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/stark/utils/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/stark/utils/page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/templates/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/templates/page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
