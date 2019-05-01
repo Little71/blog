@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb5e2481-645c-48bd-8311-a595e8195ba3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/.idea/dataSources/4d5e21d6-5acd-46eb-a58f-556cc900be75.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/.idea/dataSources/ec094b20-1ccb-4cc3-8d41-d402f884973d.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../stark_work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/app01/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/app01/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/app01/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/app01/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/app01/stark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/stark/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/stark/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stark_work/stark/service/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/stark/service/stark.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stark_work/stark/utils/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/stark/utils/page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stark_work/templates/list_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/templates/list_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stark_work/templates/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../stark_work/templates/page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,37 +79,35 @@
     <session id="-649025041">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="319" column="7" selection-start-line="319" selection-start-column="7" selection-end-line="319" selection-end-column="7" />
+            <state relative-caret-position="271">
+              <caret line="48" column="65" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="65" />
               <folding>
                 <element signature="e#19#51#0" expanded="true" />
                 <element signature="e#421#995#0" />
-                <element signature="e#1040#3288#0" />
                 <element signature="e#3329#3568#0" />
-                <element signature="e#3604#4382#0" />
-                <element signature="e#4416#5973#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stark/utils/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3365">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="153">
+              <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -139,10 +146,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="87" />
-    <option name="y" value="78" />
-    <option name="width" value="1310" />
-    <option name="height" value="792" />
+    <option name="x" value="53" />
+    <option name="y" value="48" />
+    <option name="width" value="1767" />
+    <option name="height" value="898" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -152,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,7 +198,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,10 +294,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="87" y="78" width="1310" height="792" extended-state="0" />
+    <frame x="43" y="39" width="1413" height="718" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11808118" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -432,19 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="95" column="66" lean-forward="true" selection-start-line="95" selection-start-column="66" selection-end-line="95" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#241#488#0" />
-            <element signature="e#525#940#0" />
-            <element signature="e#975#1220#0" />
-            <element signature="e#1255#1425#0" />
-            <element signature="e#1463#2480#0" />
-            <element signature="e#2517#5397#0" />
-            <element signature="e#5438#5807#0" />
-            <element signature="e#5843#6935#0" />
-            <element signature="e#6976#7973#0" />
-            <element signature="e#8013#9517#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -454,25 +448,22 @@
     <entry file="file://$PROJECT_DIR$/stark/templates/pop.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
+    <entry file="file://$PROJECT_DIR$/stark/utils/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="319" column="7" selection-start-line="319" selection-start-column="7" selection-end-line="319" selection-end-column="7" />
-          <folding>
-            <element signature="e#19#51#0" expanded="true" />
-            <element signature="e#421#995#0" />
-            <element signature="e#1040#3288#0" />
-            <element signature="e#3329#3568#0" />
-            <element signature="e#3604#4382#0" />
-            <element signature="e#4416#5973#0" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stark/utils/page.py">
+    <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3365">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="271">
+          <caret line="48" column="65" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="65" />
+          <folding>
+            <element signature="e#19#51#0" expanded="true" />
+            <element signature="e#421#995#0" />
+            <element signature="e#3329#3568#0" />
+          </folding>
         </state>
       </provider>
     </entry>

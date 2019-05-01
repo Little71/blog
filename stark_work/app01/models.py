@@ -21,7 +21,7 @@ class Author(models.Model):
     authorDetail = models.OneToOneField(to="AuthorDetail", on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 
 class AuthorDetail(models.Model):
@@ -31,7 +31,7 @@ class AuthorDetail(models.Model):
     addr = models.CharField(max_length=64)
 
     def __str__(self):
-        return self.telephone
+        return str(self.telephone)
 
 
 class Publish(models.Model):
@@ -41,7 +41,7 @@ class Publish(models.Model):
     email = models.EmailField()
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 
 class Book(models.Model):
@@ -56,4 +56,4 @@ class Book(models.Model):
     authors = models.ManyToManyField(to='Author', )
 
     def __str__(self):
-        return self.title
+        return str(self.title)
