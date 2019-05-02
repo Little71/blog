@@ -38,5 +38,19 @@
 <div>
 {% include 'form.html' %}
 </div>
+<script>
+    function pop_response(text,pk,pop_res_id){
+        //选择select标签
+        //option的text和value值
+
+        var $option = $('<option></option>');
+        $option.val(pk);
+        $option.html(text);
+        $option.prop('selected',true);
+        $('#'+pop_res_id).children.prop('selected',false);
+        $('#'+pop_res_id).append($option)
+    }
+
+</script>
 </body>
 </html>

@@ -18,7 +18,7 @@ class ShowList:
         self.data_list = data_list
         data_count = self.data_list.count()
         self.request = request
-        current_page = int(self.request.GET.get('page', 1))
+        current_page = self.request.GET.get('page', 1)
         base_path = self.request.path
         self.page = Page(current_page, data_count, self.request.GET, base_path)
         self.data = self.data_list[self.page.start:self.page.end]
@@ -29,19 +29,19 @@ class ShowList:
         for filter_field in self.config.list_filter:
             params = copy.deepcopy(self.request.GET)
             filter_field_obj = self.config.model._meta.get_field(filter_field)
-
-            if isinstance(filter_field_obj,(ForeignKey,ManyToManyField)):
-                data_list = filter_field_obj.rel.to.objects.all()
+            if isinstance(filter_field_obj, (ForeignKey, ManyToManyField)):
+                data_list = filter_field_obj.related_model.objects.all()
             else:
-                data_list = self.config.model.objects.all().values('pk',filter_field)
+                data_list = self.config.model.objects.all().values('pk', filter_field)
             temp = []
 
             if params.get(filter_field):
                 del params[filter_field]
-                temp.append(f"<a href='?{params.urlencode()}'>all</a>")
+                temp.append(mark_safe(f"<a href='?{params.urlencode()}'>all</a>"))
             else:
-                temp.append(f"<a class='active' href='#'>all</a>")
+                temp.append(mark_safe(f"<a class='active' href='#'>all</a>"))
 
+            cid = self.request.GET.get(filter_field)
             for obj in data_list:
                 if isinstance(filter_field_obj, (ForeignKey, ManyToManyField)):
                     pk = obj.pk
@@ -51,16 +51,14 @@ class ShowList:
                     pk = obj.get('pk')
                     text = obj.get(filter_field)
                     params[filter_field] = text
-
-                if str(pk) in params.values():
+                url = params.urlencode()
+                if str(pk) == cid:
                     link_tag = f"<a class='active' href='?{url}'>{text}</a>"
                 else:
                     link_tag = f"<a href=?{url}>{text}</a>"
 
-                url = params.urlencode()
                 temp.append(mark_safe(link_tag))
             link_dic[filter_field] = temp
-        print('link_dic', link_dic)
         return link_dic
 
     def get_action_list(self):
@@ -95,14 +93,19 @@ class ShowList:
                 if callable(field):
                     val = field(self.config, obj=obj)
                 else:
-                    val = getattr(obj, field)
-                    filter_obj = self.config.model._meta.get_field(field)
-                    if isinstance(filter_obj, ManyToManyField):
-                        t = []
-                        for i in  val.all():
-                            t.append(str(obj))
-                        val = ','.join(t)
+                    try:
+                        val = getattr(obj, field)
+                        # 这里获取的时候 有 __str__ 但是没有这个属性的字段  所以或报错
+                        # 这里捕获到 如果 field是__str__的时候直接获取值就行
+                        filter_obj = self.config.model._meta.get_field(field)
+                        if isinstance(filter_obj, ManyToManyField):
+                            t = []
+                            for i in val.all():
+                                t.append(str(i))
+                            val = ','.join(t)
 
+                    except Exception as e:
+                        val = getattr(obj, field)
                     if field in self.config.list_display_links:
                         change_url = self.config._get_url(obj, "change")
                         val = mark_safe(f'<a href="{change_url}">{val}</a>')
@@ -171,15 +174,32 @@ class ModelStark:
 
     def add_view(self, request):
         modelformclass = self.get_modelform()
+        form = modelformclass()
+
+        for bfield in form:
+            # from django.forms.boundfield import BoundField
+            # from django.forms.models import ModelMultipleChoiceField
+            from django.forms.models import ModelChoiceField
+
+            if isinstance(bfield.field, ModelChoiceField):
+                bfield.is_pop = True
+                related_mode_name = bfield.field.queryset.model._meta.model_name
+                related_mode_app_label = bfield.field.queryset.model._meta.app_label
+
+                _url = reverse(f'{related_mode_app_label}_{related_mode_name}_add')
+                bfield.url = _url + 'id_'+bfield.name
+
         if request.method == "POST":
             form = modelformclass(request.POST)
+            url = self._get_url2('list')
             if form.is_valid():
-                form.save()
-                url = self._get_url2('list')
-                return redirect(url)
-            else:
-                return render(request, 'add_view.html', locals())
-        form = modelformclass()
+                obj = form.save()
+                pop_res_id = request.GET.get('pop_res_id')
+                res = {'pk':obj.pk,'text':str(obj),'pop_res_id':pop_res_id}
+                if pop_res_id:
+                    return render(request,'pop.html',locals())
+                else:
+                    return redirect(url)
         return render(request, 'add_view.html', locals())
 
     def delete_view(self, request, id):
@@ -237,6 +257,8 @@ class ModelStark:
         return filter_condition
 
     def list_view(self, request):
+
+        add_url = self._get_url2('add')
         if request.method == "POST":
             action = request.POST.get('action')
             selected_pk = request.POST.getlist('selected_pk')

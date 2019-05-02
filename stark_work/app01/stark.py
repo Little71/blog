@@ -7,7 +7,7 @@ from django.utils.safestring import mark_safe
 
 
 class BookConfig(ModelStark):
-    list_display = ['title', 'price']
+    list_display = ['title', 'price','publish','authors']
     list_display_links = ['title']
 
     def patch_init(self, request, queryset):
@@ -15,7 +15,7 @@ class BookConfig(ModelStark):
         queryset.update(price=100)
 
     actions = [patch_init]
-    list_filter = ['publish','author']
+    list_filter = ['publish','authors']
 
 
 class PublishConfig(ModelStark):

@@ -11,6 +11,9 @@
             text-decoration: none;
             color: grey;
         }
+        .active{
+            color: red!important;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +40,7 @@
                         <option value="{{ item.name }}">{{ item.desc }}</option>
                     {% endfor %}
                 </select>
-                <button type="submit" class="btn btn-primary">Go</button>
+                <button type="submit" class="btn btn-success">Go</button>
                 <table class="table table-bordered table-striped">
                     <thead>
                     <th>序号</th>

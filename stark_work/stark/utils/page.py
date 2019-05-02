@@ -2,7 +2,7 @@ from django.core.paginator import Paginator
 
 
 class Page:
-    def __init__(self, page_num, all_count, params,url_prefix, max_page=7, per_page=10):
+    def __init__(self, page_num, all_count, params,url_prefix, max_page=7, per_page=3):
         '''
 
         :param page_num: 当前页
@@ -21,11 +21,15 @@ class Page:
         self.total_page, m = divmod(self.all_count, self.per_page)
         if m:
             self.total_page += 1
+
         if self.page_num:
             try:
                 self.page_num = int(self.page_num)
                 if self.page_num > self.total_page:
-                    self.page_num = self.total_page
+                    if self.total_page <= 0:
+                        self.page_num = 1
+                    else:
+                        self.page_num = self.total_page
             except Exception as e:
                 self.page_num = 1
 
