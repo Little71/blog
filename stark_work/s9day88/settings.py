@@ -56,7 +56,7 @@ ROOT_URLCONF = 's9day88.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'stark/templates'), ],
+        'DIRS': [os.path.join(BASE_DIR, 'stark/../stark/templates'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

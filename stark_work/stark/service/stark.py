@@ -103,12 +103,17 @@ class ShowList:
                             for i in val.all():
                                 t.append(str(i))
                             val = ','.join(t)
+                        else:
+                            # charfield integerfield  foreignkey 默认 choices为空
+                            if filter_obj.choices:
+                                func = getattr(obj, 'get_' + field + '_display')
+                                val = func()
+                            if field in self.config.list_display_links:
+                                change_url = self.config._get_url(obj, "change")
+                                val = mark_safe(f'<a href="{change_url}">{val}</a>')
 
                     except Exception as e:
                         val = getattr(obj, field)
-                    if field in self.config.list_display_links:
-                        change_url = self.config._get_url(obj, "change")
-                        val = mark_safe(f'<a href="{change_url}">{val}</a>')
                 temp.append(val)
             new_list_data.append(temp)
         return new_list_data
@@ -187,7 +192,7 @@ class ModelStark:
                 related_mode_app_label = bfield.field.queryset.model._meta.app_label
 
                 _url = reverse(f'{related_mode_app_label}_{related_mode_name}_add')
-                bfield.url = _url + 'id_'+bfield.name
+                bfield.url = _url + 'id_' + bfield.name
 
         if request.method == "POST":
             form = modelformclass(request.POST)
@@ -195,9 +200,9 @@ class ModelStark:
             if form.is_valid():
                 obj = form.save()
                 pop_res_id = request.GET.get('pop_res_id')
-                res = {'pk':obj.pk,'text':str(obj),'pop_res_id':pop_res_id}
+                res = {'pk': obj.pk, 'text': str(obj), 'pop_res_id': pop_res_id}
                 if pop_res_id:
-                    return render(request,'pop.html',locals())
+                    return render(request, 'pop.html', locals())
                 else:
                     return redirect(url)
         return render(request, 'add_view.html', locals())
@@ -278,6 +283,11 @@ class ModelStark:
 
         return render(request, 'list_view.html', locals())
 
+    # 自定义模型新的url
+    def extra_url(self):
+
+        return []
+
     def get_url2(self):
         temp = []
         model_name = self.model._meta.model_name
@@ -286,6 +296,7 @@ class ModelStark:
         temp.append(url(r"(\d+)/delete/", self.delete_view, name=f"{app_name}_{model_name}_delete"))
         temp.append(url(r"(\d+)/change/", self.change_view, name=f"{app_name}_{model_name}_change"))
         temp.append(url(r"^$", self.list_view, name=f"{app_name}_{model_name}_list"))
+        # temp.append(self.extra_url())
 
         return temp
 

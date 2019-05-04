@@ -2,26 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b46007e-f92e-49a7-8c7c-93edb7432c34" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/stark/templates/pop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/crm/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/service/stark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/js/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/add_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/change_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/delete_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/list_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/pop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/utils/page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/stark/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/migrations/0002_auto_20190503_1310.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app01/migrations/0003_author_gender.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/crm_s9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/crm_s9.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/crm/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm_s9/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/crm_s9/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/s9day88.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/stark.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/s9day88/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/s9day88/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/s9day88/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/s9day88/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stark/service/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/stark/service/stark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stark/utils/page.py" beforeDir="false" afterPath="$PROJECT_DIR$/stark/utils/page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/stark/templates/add_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/change_view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/change_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/stark/templates/change_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/delete_view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/delete_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/stark/templates/delete_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/stark/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/list_view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/list_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/stark/templates/list_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/stark/templates/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stark/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/stark/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +69,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/s9day88$tests.coverage" NAME="tests Coverage Results" MODIFIED="1525407948956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
-    <SUITE FILE_PATH="coverage/stark_work$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1556613624036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stark" />
+    <SUITE FILE_PATH="coverage/stark_work$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1556859568570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stark" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -148,46 +186,48 @@
     <session id="1641655931">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.45" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="11" />
           <entry key="html" value="1376" />
-          <entry key="py" value="5441" />
-          <entry key="py@s9day88" value="24" />
+          <entry key="py" value="5754" />
+          <entry key="py@s9day88" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="4" />
+          <entry key="CommandLine" value="19" />
           <entry key="HTML" value="1376" />
-          <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="5441" />
+          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="Python" value="5754" />
           <entry key="Scratch" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="app01_author" value="2" />
+          <entry key="app01_author" value="3" />
           <entry key="app01_authordetail" value="1" />
           <entry key="app01_book" value="3" />
           <entry key="app01_publish" value="1" />
           <entry key="html" value="16" />
-          <entry key="py" value="43" />
+          <entry key="py" value="46" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="7" />
+          <entry key="Database Element" value="8" />
           <entry key="HTML" value="16" />
-          <entry key="Python" value="43" />
+          <entry key="Python" value="46" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -197,45 +237,7 @@
     <favorites_list name="s9day88_1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="113" column="28" lean-forward="true" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
-              <folding>
-                <element signature="e#19#30#0" expanded="true" />
-                <element signature="e#459#877#0" />
-                <element signature="e#927#2447#0" />
-                <element signature="e#2460#2717#0" />
-                <element signature="e#2753#3245#0" />
-                <element signature="e#3279#4197#0" />
-                <element signature="e#4410#4453#0" />
-                <element signature="e#4510#4527#0" />
-                <element signature="e#4619#4801#0" />
-                <element signature="e#4844#5010#0" />
-                <element signature="e#5066#5195#0" />
-                <element signature="e#5251#5380#0" />
-                <element signature="e#5438#5641#0" />
-                <element signature="e#5680#5966#0" />
-                <element signature="e#6304#7592#0" />
-                <element signature="e#6497#6732#0" />
-                <element signature="e#6782#7303#0" />
-                <element signature="e#7344#7575#0" />
-                <element signature="e#7612#7720#0" />
-                <element signature="e#7775#8060#0" />
-                <element signature="e#8115#8393#0" />
-                <element signature="e#8710#9406#0" />
-                <element signature="e#9167#9666#0" />
-                <element signature="e#9712#9746#0" />
-                <element signature="e#9778#10435#0" />
-                <marker date="1556785713841" expanded="true" signature="9562:9571" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -269,21 +271,21 @@
         <option value="$PROJECT_DIR$/s9day88/settings.py" />
         <option value="$PROJECT_DIR$/stark/apps.py" />
         <option value="$PROJECT_DIR$/app01/tests.py" />
-        <option value="$PROJECT_DIR$/s9day88/urls.py" />
         <option value="$PROJECT_DIR$/templates/change_view.html" />
-        <option value="$PROJECT_DIR$/stark/tests.py" />
         <option value="$PROJECT_DIR$/templates/delete_view.html" />
         <option value="$PROJECT_DIR$/templates/page.html" />
         <option value="$PROJECT_DIR$/stark/admin.py" />
-        <option value="$PROJECT_DIR$/app01/models.py" />
         <option value="$PROJECT_DIR$/app01/admin.py" />
         <option value="$PROJECT_DIR$/templates/list_view.html" />
         <option value="$PROJECT_DIR$/app01/stark.py" />
         <option value="$PROJECT_DIR$/stark/utils/page.py" />
         <option value="$PROJECT_DIR$/templates/pop.html" />
         <option value="$PROJECT_DIR$/templates/add_view.html" />
-        <option value="$PROJECT_DIR$/stark/service/stark.py" />
         <option value="$PROJECT_DIR$/templates/form.html" />
+        <option value="$PROJECT_DIR$/stark/tests.py" />
+        <option value="$PROJECT_DIR$/s9day88/urls.py" />
+        <option value="$PROJECT_DIR$/app01/models.py" />
+        <option value="$PROJECT_DIR$/stark/service/stark.py" />
       </list>
     </option>
   </component>
@@ -300,11 +302,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="428" />
-    <option name="y" value="27" />
-    <option name="width" value="1503" />
-    <option name="height" value="962" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="497" />
+    <option name="y" value="65" />
+    <option name="width" value="1437" />
+    <option name="height" value="953" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -314,7 +316,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,15 +323,11 @@
               <item name="stark_work" type="b2602c69:ProjectViewProjectNode" />
               <item name="stark_work" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="stark_work" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stark_work" type="462c0819:PsiDirectoryNode" />
-              <item name="stark" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,12 +339,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ZuoYe_work\blog_work_test\blog\stark_work\stark" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\zuoye\work_ginger\work_flask\blog\blog\s9day88_1\templates" />
       <recent name="C:\Users\Administrator\PycharmProjects\s9\s9day88\stark" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ZuoYe_work\blog_work_test\blog\stark_work\stark" />
+      <recent name="D:\ZuoYe_work\blog_work_test\blog\stark_work" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -457,15 +455,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="817" extended-state="6" />
-    <editor active="true" />
+    <frame x="398" y="52" width="1149" height="762" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980916" visible="true" weight="0.13069706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980916" visible="true" weight="0.16956921" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5019084" side_tool="true" weight="0.14565827" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298193" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22627737" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33576643" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47400612" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -474,7 +471,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="manage.py@s9day88" order="11" weight="0.1839416" />
+      <window_info active="true" anchor="bottom" id="manage.py@s9day88" order="11" weight="0.5705329" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.39940387" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
@@ -521,13 +518,6 @@
     <entry file="file://C:/python3.6.1/Lib/site-packages/Django-2.0.7-py3.6.egg/django/forms/models.py" />
     <entry file="file://C:/python3.6.1/Lib/site-packages/Django-2.0.7-py3.6.egg/django/contrib/admin/sites.py" />
     <entry file="file://C:/python3.6.1/Lib/site-packages/Django-2.0.7-py3.6.egg/django/core/paginator.py" />
-    <entry file="file://$PROJECT_DIR$/stark/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stark/templates/delete_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -547,13 +537,6 @@
       </provider>
     </entry>
     <entry file="das://e84db324-d476-4c4d-a4a9-d348192fcc6e/schema/main/table/app01_book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e84db324-d476-4c4d-a4a9-d348192fcc6e/schema/main/table/app01_author">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -605,16 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/s9day88/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#641#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../crm_s9/stark/service/stark.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -633,16 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="781" column="36" selection-start-line="781" selection-start-column="27" selection-end-line="781" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,10 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <marker date="1556768791310" expanded="true" signature="130:141" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,9 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-          <folding>
-            <marker date="1556779954347" expanded="true" signature="1884:1890" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,9 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="67" lean-forward="true" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,37 +714,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://e84db324-d476-4c4d-a4a9-d348192fcc6e/schema/main/table/app01_author">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="113" column="28" lean-forward="true" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+        <state relative-caret-position="302">
+          <caret line="108" column="79" selection-start-line="108" selection-start-column="79" selection-end-line="108" selection-end-column="79" />
           <folding>
             <element signature="e#19#30#0" expanded="true" />
             <element signature="e#459#877#0" />
-            <element signature="e#927#2447#0" />
-            <element signature="e#2460#2717#0" />
-            <element signature="e#2753#3245#0" />
-            <element signature="e#3279#4197#0" />
-            <element signature="e#4410#4453#0" />
-            <element signature="e#4510#4527#0" />
-            <element signature="e#4619#4801#0" />
-            <element signature="e#4844#5010#0" />
-            <element signature="e#5066#5195#0" />
-            <element signature="e#5251#5380#0" />
-            <element signature="e#5438#5641#0" />
-            <element signature="e#5680#5966#0" />
-            <element signature="e#6304#7592#0" />
-            <element signature="e#6497#6732#0" />
-            <element signature="e#6782#7303#0" />
-            <element signature="e#7344#7575#0" />
-            <element signature="e#7612#7720#0" />
-            <element signature="e#7775#8060#0" />
-            <element signature="e#8115#8393#0" />
-            <element signature="e#8710#9406#0" />
-            <element signature="e#9167#9666#0" />
-            <element signature="e#9712#9746#0" />
-            <element signature="e#9778#10435#0" />
-            <marker date="1556785713841" expanded="true" signature="9562:9571" ph="..." />
+            <element signature="e#922#2449#0" />
+            <element signature="e#2490#2747#0" />
+            <element signature="e#2783#3275#0" />
+            <marker date="1556860802112" expanded="true" signature="9880:9889" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app01/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/s9day88/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="e#641#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <marker date="1556858885130" expanded="true" signature="70:75" ph="..." />
           </folding>
         </state>
       </provider>
