@@ -6,19 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="./veu_test/vue.js"></script>
+    <script src="./vue_test/vue.js"></script>
 </head>
 
 <body>
 <div id='app'>
     <h3>{{title}}</h3>
+	<div v-if = 'show'>lll</div>
+	<button v-on:click = "clickhandler">切换</button> 
+	<!-- v-on 绑定元素的事件 -->
+	
+	<div v-if="Math.random() > 0.5">
+  Now you see me
 </div>
+<div v-else>
+  Now you don't
+</div>
+</div>
+
+<div class="box1" v-bind:class="{box2:isgreen}"></div>
+
+<div @mouseenter='closeTimer' @mouseleaver='openTimer'></div>
+
     <script>
         var app = new Vue({
             el:'#app',//实例化对象绑定的DOM元素
             //所有的数据都放在数据属性中，为data
-            data:{title:'土豆'}
+            data:{title:'土豆',
+			show:false,
+			timer:null,
+			},
+			created(){
+				this.timer = setInterval(this.nextImg,2000);
+			}
+			//事件
+			methods:{
+				clickhandler(){
+					console.log(this.show);
+					this.show = !this.show;
+				}
+				nextImg(){
+					
+				}
+				close(){
+					...
+				}
+				openTimer(){
+					...
+				}
+			}
         });
+		
+		//获取vue对象的属性，默认属性都有$前缀
+		console.log(app.$el)
+		console.log(app.$data.title)
+		console.log(app.title)
+		
+		
+		
     </script>
 </body>
 
