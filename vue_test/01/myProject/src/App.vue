@@ -1,39 +1,55 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <Vheader></Vheader>
+    <img :src="imgStr">
     <h1>{{ msg }}</h1>
 
-    <Vheader></Vheader>
-    <Vcontent></Vcontent>
-    <Vfooter></Vfooter>
+    <!-- 自定义事件 -->
+    <Vcontent @addZhuangHandler="addHandler(str)"></Vcontent>
+    
+    <!-- 给子组件绑定自定义属性 -->
+    <Vfooter v-bind:cityArray="city"></Vfooter>
   </div>
 </template>
 
 <script>
-import Vheader from './components/Vheader.vue';
-import Vcontent from './components/Vcontent.vue';
-import Vfooter from './components/Vfooter.vue';
+import Vheader from "./components/Vheader";
+import Vcontent from "./components/Vcontent";
+import Vfooter from "./components/Vfooter";
+
+//导入 相当于把一个组件资源赋值给一个变量
+import imgStr from "./assets/logo.png";
 
 export default {
-  name: 'app',
-  data () {
+  name: "app",
+  imgStr: imgStr,
+  data() {
     return {
-      msg: 'hello world'
+      msg: "hello world",
+      city: ["北", "上", "广"]
+    };
+  },
+  methods: {
+    addHandler(str){
+      this.city.push(str);
     }
   },
-  methods:{},
-  computed:{},
-  components:{
+  computed: {},
+  components: {
     Vheader,
     Vcontent,
-    Vfooter,
-  },
-}
+    Vfooter
+  }
+};
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -41,7 +57,8 @@ export default {
   margin-top: 60px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 
