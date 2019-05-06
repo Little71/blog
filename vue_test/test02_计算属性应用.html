@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./vue_test/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<form id='computed' @submit.prevent>
+    <input type="text" value="" v-model.lazy="msg">
+    <input type="number" value="" v-model.number="msg">
+    <!--<input type="text" value="" v-bind:value="msg" @input="msgChange">-->
+    <h3>{{changeValue}}</h3>
+    <input type="submit" value="提交">
+</form>
+
+<script>
+    var com = new Vue({
+        el: '#computed',
+        data: {
+            msg: '123',
+        },
+        methods: {
+            msgChange(e){
+                //e是事件对象event
+                this.changeValue = e.target.value;
+            }
+        },
+        computed: {
+            changeValue:{
+                set:function(newvalue){this.msg=newvalue;},
+                get:function(){return this.msg;},
+            }
+        }
+    });
+
+</script>
+</body>
+
+</html>

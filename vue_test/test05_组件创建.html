@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+    <!--<script src="bootstrap/jquery/jquery-3.2.1.min.js"></script>-->
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="./vue_test/vue.js"></script>
+    <style>
+        .header {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <Vheader></Vheader>
+</div>
+<script>
+    //组件的创建
+    //跟上面new的Vue一样，实例一个vue一个对象，属性一致
+    //要创建组件 data必须是一个函数，必须返回一个对象
+    //在绑定的根元素使用
+    Vue.component('Vheader', {
+        data: function () {
+            return {};
+        },
+        template: '<div class="header" prop="">222</div>'
+    });
+
+    var app = new Vue({
+        el: '#app',//绑定的根元素，只有一个
+        data: {},
+        methods: {},
+        computed: {},
+    });
+
+</script>
+</body>
+</html>

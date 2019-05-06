@@ -106,6 +106,9 @@ venv.bak/
 *.idea
 idea/
 
+*.node_modules
+node_modules/
+
 # Eclipse + PyDev settings
 *.project
 *.pydevproject

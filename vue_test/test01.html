@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./vue_test/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div id='computed'>
+    <!--{{msg.split('').reverse().join('')}}-->
+    {{reverseStr}}
+    <button @click="clickHandler">切换</button>
+</div>
+
+<script>
+    var com = new Vue({
+        el: '#computed',
+        data: {
+            msg: 'hello world',
+        },
+        methods: {
+            clickHandler() {
+                // console.log('aaaaaaaaaaaaaaaaaaaa')
+                // this.msg = '987654321';
+                console.log(this.reverseStr);// 会去调用reverseStr的get
+                this.reverseStr = '987654321';// 会去调用reverseStr的set
+            }
+        },
+        computed: {
+            //默认只有 getter
+            // 计算数据属性，监听 watch 如绑定的属性msg发生改变会重新执行这个函数进行渲染
+            // reverseStr() {
+            //     return this.msg.split('').reverse().join('');
+            // }
+
+            reverseStr: {
+                set: function (newvalue) {
+                    this.msg = newvalue;
+                },
+                get: function () {
+                    return this.msg.split('').reverse().join('');
+                }
+            }
+        }
+    });
+
+</script>
+</body>
+
+</html>

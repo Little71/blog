@@ -7,64 +7,142 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="./vue_test/vue.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            float: left;
+            width: 20px;
+            height: 30px;
+            background-color: gold;
+            line-height: 30px;
+            text-align: center;
+            margin-left: 3px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: greenyellow;
+        }
+    </style>
 </head>
 
 <body>
 <div id='app'>
     <h3>{{title}}</h3>
-	<div v-if = 'show'>lll</div>
-	<button v-on:click = "clickhandler">切换</button> 
-	<!-- v-on 绑定元素的事件 -->
-	
-	<div v-if="Math.random() > 0.5">
-  Now you see me
-</div>
-<div v-else>
-  Now you don't
-</div>
+    <div v-if='show'>lll</div>
+    <button v-on:click="clickhandler">切换</button>
+    <!-- v-on 绑定元素的事件 -->
+
+    <div v-if="Math.random() > 0.5">
+        Now you see me
+    </div>
+    <div v-else>
+        Now you don't
+    </div>
+    <h1 v-html="str"></h1>
+    <h1 v-text="str"></h1>
+
+
+    <div class="box1" v-bind:class="{box2:isgreen}"></div>
+    <button @click="checkColor">颜色切换</button>
+
+    <div @mouseenter='closeTimer' @mouseleave='openTimer'>
+        <img :src="currentimg" alt="">
+        <button @click="preImg">上一张</button>
+        <ul>
+            <li v-for="(item,index) in imgArr" @click="checkimg(item)">{{index+1}}</li>
+        </ul>
+
+        <button @click="nextImg">下一张</button>
+
+    </div>
 </div>
 
-<div class="box1" v-bind:class="{box2:isgreen}"></div>
 
-<div @mouseenter='closeTimer' @mouseleaver='openTimer'></div>
+<script>
+    var app = new Vue({
+        el: '#app',//实例化对象绑定的DOM元素
+        //所有的数据都放在数据属性中，为data
+        data: {
+            title: '土豆',
+            show: false,
+            timer: null,
+            imgArr: [
+                {id: 1, imgarr: './images/img01.jpg'},
+                {id: 2, imgarr: './images/img02.jpeg'},
+                {id: 3, imgarr: './images/img03.jpeg'},
+                {id: 4, imgarr: './images/img04.jpeg'},
+            ],
+            currentimg: './images/img01.jpg',
+            currentindex: 0,
+            Timer: null,
+            isgreen: false,
+            str:'<p>哈哈哈</p>',
+        },
+        created() {
+            this.Timer = setInterval(this.nextImg, 2000);
+        },
+        //事件
+        methods: {
+            clickhandler() {
+                console.log(this.show);
+                this.show = !this.show;
+            },
+            nextImg() {
+                if (this.currentindex === this.imgArr.length - 1) {
+                    this.currentindex = -1;
+                }
+                this.currentindex++;
+                this.currentimg = this.imgArr[this.currentindex].imgarr;
 
-    <script>
-        var app = new Vue({
-            el:'#app',//实例化对象绑定的DOM元素
-            //所有的数据都放在数据属性中，为data
-            data:{title:'土豆',
-			show:false,
-			timer:null,
-			},
-			created(){
-				this.timer = setInterval(this.nextImg,2000);
-			}
-			//事件
-			methods:{
-				clickhandler(){
-					console.log(this.show);
-					this.show = !this.show;
-				}
-				nextImg(){
-					
-				}
-				close(){
-					...
-				}
-				openTimer(){
-					...
-				}
-			}
-        });
-		
-		//获取vue对象的属性，默认属性都有$前缀
-		console.log(app.$el)
-		console.log(app.$data.title)
-		console.log(app.title)
-		
-		
-		
-    </script>
+            },
+            closeTimer() {
+                clearTimeout(this.Timer);
+            },
+            openTimer() {
+                this.Timer = setInterval(this.nextImg, 2000);
+            },
+            checkimg(item) {
+                this.currentimg = item.imgarr;
+            },
+            preImg() {
+                if (this.currentindex === 0) {
+                    this.currentindex = this.imgArr.length;
+                }
+                this.currentindex--;
+                this.currentimg = this.imgArr[this.currentindex].imgarr;
+            },
+            checkColor() {
+                this.isgreen = !this.isgreen;
+            }
+        }
+    });
+
+    //获取vue对象的属性，默认属性都有$前缀
+    // console.log(app.$el);
+    // console.log(app.$data.title);
+    // console.log(app.title);
+
+
+</script>
 </body>
 
 </html>
