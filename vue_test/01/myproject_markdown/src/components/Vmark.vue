@@ -29,16 +29,11 @@ export default {
         content: this.$refs.t.innerText
         //获取有ref属性且值为t的标签
       };
-      var _this=this;
-      $.ajax({
-        url: "",
-        methods: "post",
-        data: json,
-        success: function(data) {
-          _this.$store.state.alllist = data;
-        },
-        error: function(error) {}
-      });
+      // 触发mutations的方法，有局限性只能用于同步操作
+      // this.$store.commit("addOneNote", json);
+
+      // 触发actions的方法，异步操作
+      this.$store.dispatch("addOneNote", json);
     }
   },
   computed: {

@@ -21,14 +21,8 @@ export default {
   },
   //页面结构加载完成了就会执行
   mounted(){
-    var _this=this;
-    $.ajax({
-      url:'',
-      methods:'get',
-      success:function(data){
-        _this.$store.state.alllist = data;
-      }
-    });
+    // this.$store.commit('getAllDatas')
+    this.$store.dispatch('getAllDatas')
   }
 }
 </script>
