@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="005cb71b-e6f9-4e12-920e-9a088a042118" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue_test/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/fonts/01.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/images/img01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/images/img02.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/images/img03.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/images/img04.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/test01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/test02_计算属性应用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/test03_music.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/test04_computed_music.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_test/test05_组件创建.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue_test/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="005cb71b-e6f9-4e12-920e-9a088a042118" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +81,11 @@
     <session id="1456639498">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.53" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -133,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/vue_test/test05_组件创建.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -221,12 +208,230 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules" />
     <handled-path value="$PROJECT_DIR$/vue_test/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/vue_test/node_modules/bootstrap/package.json" />
-      <path value="$PROJECT_DIR$/vue_test/node_modules/jquery/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_acorn-dynamic-import@2.0.2@acorn-dynamic-import/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_ajv-keywords@3.4.0@ajv-keywords/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_ansi-regex@2.1.1@ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_ansi-styles@2.2.1@ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-code-frame@6.26.0@babel-code-frame/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-core@6.26.3@babel-core/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-generator@6.26.1@babel-generator/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-builder-binary-assignment-operator-visitor@6.24.1@babel-helper-builder-binary-assignment-operator-visitor/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-call-delegate@6.24.1@babel-helper-call-delegate/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-define-map@6.26.0@babel-helper-define-map/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-explode-assignable-expression@6.24.1@babel-helper-explode-assignable-expression/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-function-name@6.24.1@babel-helper-function-name/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-get-function-arity@6.24.1@babel-helper-get-function-arity/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-hoist-variables@6.24.1@babel-helper-hoist-variables/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-optimise-call-expression@6.24.1@babel-helper-optimise-call-expression/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-regex@6.26.0@babel-helper-regex/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-remap-async-to-generator@6.24.1@babel-helper-remap-async-to-generator/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helper-replace-supers@6.24.1@babel-helper-replace-supers/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-helpers@6.24.1@babel-helpers/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-loader@7.1.5@babel-loader/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-messages@6.23.0@babel-messages/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-check-es2015-constants@6.22.0@babel-plugin-check-es2015-constants/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-syntax-async-functions@6.13.0@babel-plugin-syntax-async-functions/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-syntax-async-generators@6.13.0@babel-plugin-syntax-async-generators/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-syntax-exponentiation-operator@6.13.0@babel-plugin-syntax-exponentiation-operator/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-syntax-object-rest-spread@6.13.0@babel-plugin-syntax-object-rest-spread/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-syntax-trailing-function-commas@6.22.0@babel-plugin-syntax-trailing-function-commas/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-async-generator-functions@6.24.1@babel-plugin-transform-async-generator-functions/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-async-to-generator@6.24.1@babel-plugin-transform-async-to-generator/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-arrow-functions@6.22.0@babel-plugin-transform-es2015-arrow-functions/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-block-scoped-functions@6.22.0@babel-plugin-transform-es2015-block-scoped-functions/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-block-scoping@6.26.0@babel-plugin-transform-es2015-block-scoping/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-classes@6.24.1@babel-plugin-transform-es2015-classes/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-computed-properties@6.24.1@babel-plugin-transform-es2015-computed-properties/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-destructuring@6.23.0@babel-plugin-transform-es2015-destructuring/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-duplicate-keys@6.24.1@babel-plugin-transform-es2015-duplicate-keys/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-for-of@6.23.0@babel-plugin-transform-es2015-for-of/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-function-name@6.24.1@babel-plugin-transform-es2015-function-name/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-literals@6.22.0@babel-plugin-transform-es2015-literals/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-modules-amd@6.24.1@babel-plugin-transform-es2015-modules-amd/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-modules-commonjs@6.26.2@babel-plugin-transform-es2015-modules-commonjs/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-modules-systemjs@6.24.1@babel-plugin-transform-es2015-modules-systemjs/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-modules-umd@6.24.1@babel-plugin-transform-es2015-modules-umd/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-object-super@6.24.1@babel-plugin-transform-es2015-object-super/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-parameters@6.24.1@babel-plugin-transform-es2015-parameters/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-shorthand-properties@6.24.1@babel-plugin-transform-es2015-shorthand-properties/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-spread@6.22.0@babel-plugin-transform-es2015-spread/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-sticky-regex@6.24.1@babel-plugin-transform-es2015-sticky-regex/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-template-literals@6.22.0@babel-plugin-transform-es2015-template-literals/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-typeof-symbol@6.23.0@babel-plugin-transform-es2015-typeof-symbol/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-es2015-unicode-regex@6.24.1@babel-plugin-transform-es2015-unicode-regex/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-exponentiation-operator@6.24.1@babel-plugin-transform-exponentiation-operator/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-object-rest-spread@6.26.0@babel-plugin-transform-object-rest-spread/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-regenerator@6.26.0@babel-plugin-transform-regenerator/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-plugin-transform-strict-mode@6.24.1@babel-plugin-transform-strict-mode/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-preset-env@1.7.0@babel-preset-env/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-preset-stage-3@6.24.1@babel-preset-stage-3/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-register@6.26.0@babel-register/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-runtime@6.26.0@babel-runtime/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-template@6.26.0@babel-template/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-traverse@6.26.0@babel-traverse/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babel-types@6.26.0@babel-types/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_babylon@6.18.0@babylon/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_balanced-match@0.4.2@balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_big.js@5.2.2@big.js/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_bluebird@3.5.4@bluebird/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_brace-expansion@1.1.11@brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_browserslist@3.2.8@browserslist/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_chalk@1.1.3@chalk/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_colormin@1.1.2@colormin/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_commondir@1.0.1@commondir/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_consolidate@0.14.5@consolidate/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_convert-source-map@1.6.0@convert-source-map/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_cosmiconfig@2.2.2@cosmiconfig/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_cross-env@5.2.0@cross-env/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_cross-spawn@6.0.5@cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_css-color-names@0.0.4@css-color-names/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_css-loader@0.28.11@css-loader/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_css-selector-tokenizer@0.7.1@css-selector-tokenizer/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_cssesc@0.1.0@cssesc/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_cssnano@3.10.0@cssnano/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_de-indent@1.0.2@de-indent/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_debug@2.6.9@debug/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_decamelize@1.2.0@decamelize/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_defined@1.0.0@defined/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_detect-indent@4.0.0@detect-indent/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_emojis-list@2.1.0@emojis-list/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_enhanced-resolve@3.4.1@enhanced-resolve/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_error-ex@1.3.2@error-ex/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_escape-string-regexp@1.0.5@escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_esutils@2.0.2@esutils/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_fastparse@1.1.2@fastparse/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_file-loader@1.1.11@file-loader/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_find-cache-dir@1.0.0@find-cache-dir/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_find-up@2.1.0@find-up/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_flatten@1.0.2@flatten/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_function-bind@1.1.1@function-bind/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_globals@9.18.0@globals/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_graceful-fs@4.1.15@graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_has-ansi@2.0.0@has-ansi/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_has@1.0.3@has/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_hash-sum@1.0.2@hash-sum/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_he@1.2.0@he/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_home-or-tmp@2.0.0@home-or-tmp/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_icss-replace-symbols@1.1.0@icss-replace-symbols/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_icss-utils@2.1.0@icss-utils/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_indexes-of@1.0.1@indexes-of/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_interpret@1.2.0@interpret/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_invariant@2.2.4@invariant/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_is-arrayish@0.2.1@is-arrayish/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_is-directory@0.3.1@is-directory/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_is-finite@1.0.2@is-finite/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_is-windows@1.0.2@is-windows/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_isexe@2.0.0@isexe/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_js-tokens@3.0.2@js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_js-tokens@4.0.0@js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_js-yaml@3.13.1@js-yaml/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_jsesc@0.5.0@jsesc/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_jsesc@1.3.0@jsesc/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_json-loader@0.5.7@json-loader/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_json5@0.5.1@json5/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_json5@1.0.1@json5/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_loader-runner@2.4.0@loader-runner/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_loader-utils@1.2.3@loader-utils/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_lodash.camelcase@4.3.0@lodash.camelcase/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_lodash@4.17.11@lodash/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_loose-envify@1.4.0@loose-envify/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_lru-cache@4.1.5@lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_make-dir@1.3.0@make-dir/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_math-expression-evaluator@1.2.17@math-expression-evaluator/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_memory-fs@0.4.1@memory-fs/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_minimatch@3.0.4@minimatch/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_minimist@0.0.8@minimist/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_minimist@1.2.0@minimist/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_mkdirp@0.5.1@mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_ms@2.0.0@ms/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_nice-try@1.0.5@nice-try/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_node-libs-browser@2.2.0@node-libs-browser/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_number-is-nan@1.0.1@number-is-nan/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_object-assign@4.1.1@object-assign/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_os-homedir@1.0.2@os-homedir/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_os-tmpdir@1.0.2@os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_parse-json@2.2.0@parse-json/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_path-is-absolute@1.0.1@path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_path-key@2.0.1@path-key/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_path-parse@1.0.6@path-parse/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_pkg-dir@2.0.0@pkg-dir/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-calc@5.3.1@postcss-calc/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-colormin@2.2.2@postcss-colormin/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-convert-values@2.6.1@postcss-convert-values/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-discard-comments@2.0.4@postcss-discard-comments/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-discard-duplicates@2.1.0@postcss-discard-duplicates/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-discard-empty@2.1.0@postcss-discard-empty/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-discard-overridden@0.1.1@postcss-discard-overridden/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-discard-unused@2.2.3@postcss-discard-unused/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-filter-plugins@2.0.3@postcss-filter-plugins/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-load-config@1.2.0@postcss-load-config/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-load-options@1.2.0@postcss-load-options/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-load-plugins@2.3.0@postcss-load-plugins/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-merge-idents@2.1.7@postcss-merge-idents/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-merge-longhand@2.0.2@postcss-merge-longhand/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-message-helpers@2.0.0@postcss-message-helpers/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-modules-extract-imports@1.2.1@postcss-modules-extract-imports/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-modules-local-by-default@1.2.0@postcss-modules-local-by-default/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-modules-scope@1.1.0@postcss-modules-scope/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-modules-values@1.3.0@postcss-modules-values/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-selector-parser@2.2.3@postcss-selector-parser/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss-value-parser@3.3.1@postcss-value-parser/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_postcss@5.2.18@postcss/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_private@0.1.8@private/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_pseudomap@1.0.2@pseudomap/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_reduce-css-calc@1.3.0@reduce-css-calc/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_reduce-function-call@1.0.2@reduce-function-call/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_regenerate@1.4.0@regenerate/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_regenerator-runtime@0.11.1@regenerator-runtime/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_regexpu-core@1.0.0@regexpu-core/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_regjsgen@0.2.0@regjsgen/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_regjsparser@0.1.5@regjsparser/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_repeating@2.0.1@repeating/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_require-from-string@1.2.1@require-from-string/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/module_dir/zmodules/bbb/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/resolver/baz/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/resolver/browser_field/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/resolver/dot_main/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/resolver/dot_slash_main/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/resolver/incorrect_main/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/resolver/invalid_main/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/resolver/multirepo/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/resolver/multirepo/packages/package-a/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_resolve@1.10.1@resolve/test/resolver/multirepo/packages/package-b/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_safe-buffer@5.1.2@safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_schema-utils@0.4.7@schema-utils/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_semver@5.7.0@semver/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_shebang-command@1.2.0@shebang-command/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_shebang-regex@1.0.0@shebang-regex/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_slash@1.0.0@slash/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_source-list-map@2.0.1@source-list-map/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_source-map-support@0.4.18@source-map-support/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_source-map@0.5.7@source-map/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_source-map@0.6.1@source-map/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_strip-ansi@3.0.1@strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_supports-color@2.0.0@supports-color/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_supports-color@3.2.3@supports-color/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_supports-color@4.5.0@supports-color/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_tapable@0.2.9@tapable/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_to-fast-properties@1.0.3@to-fast-properties/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_trim-right@1.0.1@trim-right/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_uniq@1.0.1@uniq/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_vue-hot-reload-api@2.3.3@vue-hot-reload-api/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_vue-loader@13.7.3@vue-loader/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_vue-style-loader@3.1.2@vue-style-loader/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_vue-template-compiler@2.6.10@vue-template-compiler/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_vue-template-es2015-compiler@1.9.1@vue-template-es2015-compiler/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_webpack-dev-server@2.11.5@webpack-dev-server/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_webpack@3.12.0@webpack/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_which@1.3.1@which/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/node_modules/_yallist@2.1.2@yallist/package.json" />
+      <path value="$PROJECT_DIR$/vue_test/01/myProject/package.json" />
       <path value="$PROJECT_DIR$/vue_test/package.json" />
     </packageJsonPaths>
   </component>
@@ -457,8 +662,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="476" y="216" width="1280" height="795" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19918033" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20245902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -607,7 +813,7 @@
     <entry file="file://$PROJECT_DIR$/vue_test/test05_组件创建.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
         </state>
       </provider>
     </entry>
