@@ -7,6 +7,7 @@ import Vuex from 'vuex'
 import $ from 'jquery';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import axios from 'axios';
 
 Vue.use(ElementUI);
 
@@ -28,7 +29,7 @@ const store = new Vuex.Store({
     },
     ADDONENOTE(state, newdata) {
       state.alllist = newdata;
-    }, 
+    },
     DELETENOTE(state, newdata) {
       state.alllist = newdata;
     }
@@ -42,25 +43,36 @@ const store = new Vuex.Store({
           state.alllist = data;
         }
       });
+      // axios.get('url').then(function (response) { 
+      //   console.log(response);
+      // }).catch(function (error) { 
+      //   console.log(error);
+      // });
     },
-    addOneNote(content, json) {
+    addOneNote(context, json) {
       $.ajax({
         url: "",
         methods: "post",
         data: json,
         success: function (data) {
-          content.commit('ADDONENOTE', data);
+          context.commit('ADDONENOTE', data);
         },
         error: function (error) { }
       });
+      axios.post('url',{}).then(function(response){
+        console.log(response);
+      }).catch(function(errpr){
+        console.log(errpr);
+      });
+      axios.interceptors.request.use
     },
-    deleteNote(content, id) {
+    deleteNote(context, id) {
       $.ajax({
         url: "",
         methods: "delete",
         data: id,
         success: function (data) {
-          content.commit('DELETENOTE', data);
+          context.commit('DELETENOTE', data);
         },
         error: function (error) { }
       });
