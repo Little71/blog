@@ -21,3 +21,6 @@ class custom(UIModule):
         return "<h1>aaa</h1>"
         # return escape.xhtml_escape("<h1>aaa</h1>")
         return escape.xhtml_unescape('<h1>aaa</h1>')
+
+    def render_string(self, path, **kwargs):
+        pass
