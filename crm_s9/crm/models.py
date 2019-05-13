@@ -13,6 +13,7 @@ from django.db import models
 
 from django.db import models
 
+
 class Department(models.Model):
     """
     部门表
@@ -37,7 +38,7 @@ class UserInfo(models.Model):
     password = models.CharField(verbose_name='密码', max_length=64)
     email = models.EmailField(verbose_name='邮箱', max_length=64)
 
-    depart = models.ForeignKey(verbose_name='部门', to="Department", to_field="code")
+    depart = models.ForeignKey(verbose_name='部门', to="Department", to_field="code", on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -80,8 +81,8 @@ class ClassList(models.Model):
     如：
         Python全栈  面授班  5期  10000  2017-11-11  2018-5-11
     """
-    school = models.ForeignKey(verbose_name='校区', to='School')
-    course = models.ForeignKey(verbose_name='课程名称', to='Course')
+    school = models.ForeignKey(verbose_name='校区', to='School', on_delete=models.CASCADE)
+    course = models.ForeignKey(verbose_name='课程名称', to='Course', on_delete=models.CASCADE)
 
     semester = models.IntegerField(verbose_name="班级(期)")
     price = models.IntegerField(verbose_name="学费")
@@ -89,8 +90,10 @@ class ClassList(models.Model):
     graduate_date = models.DateField(verbose_name="结业日期", null=True, blank=True)
     memo = models.CharField(verbose_name='说明', max_length=256, blank=True, null=True, )
     # teachers = models.ManyToManyField(verbose_name='任课老师', to='UserInfo',limit_choices_to={'depart_id__in':[1003,1004],})
-    teachers = models.ManyToManyField(verbose_name='任课老师', to='UserInfo',related_name="abc",limit_choices_to={"depart__in":[1002,1005]})
-    tutor = models.ForeignKey(verbose_name='班主任', to='UserInfo', related_name='classes',limit_choices_to={"depart":1001})
+    teachers = models.ManyToManyField(verbose_name='任课老师', to='UserInfo', related_name="abc",
+                                      limit_choices_to={"depart__in": [1002, 1005]})
+    tutor = models.ForeignKey(verbose_name='班主任', to='UserInfo', related_name='classes',
+                              limit_choices_to={"depart": 1001}, on_delete=models.CASCADE)
 
     def __str__(self):
         return "{0}({1}期)".format(self.course.name, self.semester)
@@ -165,7 +168,7 @@ class Customer(models.Model):
         verbose_name="转介绍自学员",
         help_text="若此客户是转介绍自内部学员,请在此处选择内部学员姓名",
         related_name="internal_referral"
-    )
+        , on_delete=models.CASCADE)
     course = models.ManyToManyField(verbose_name="咨询课程", to="Course")
 
     status_choices = [
@@ -180,7 +183,7 @@ class Customer(models.Model):
     )
 
     consultant = models.ForeignKey(verbose_name="课程顾问", to='UserInfo', related_name='consultanter',
-                                   limit_choices_to={'depart_id': 1001})
+                                   limit_choices_to={'depart_id': 1001}, on_delete=models.CASCADE)
 
     date = models.DateField(verbose_name="咨询日期", auto_now_add=True)
     recv_date = models.DateField(verbose_name="当前课程顾问的接单日期", null=True)
@@ -189,12 +192,13 @@ class Customer(models.Model):
     def __str__(self):
         return self.name
 
+
 class ConsultRecord(models.Model):
     """
     客户跟进记录
     """
-    customer = models.ForeignKey(verbose_name="所咨询客户", to='Customer')
-    consultant = models.ForeignKey(verbose_name="跟踪人", to='UserInfo')
+    customer = models.ForeignKey(verbose_name="所咨询客户", to='Customer', on_delete=models.CASCADE)
+    consultant = models.ForeignKey(verbose_name="跟踪人", to='UserInfo', on_delete=models.CASCADE)
     date = models.DateField(verbose_name="跟进日期", auto_now_add=True)
     note = models.TextField(verbose_name="跟进内容...")
 
@@ -206,7 +210,7 @@ class Student(models.Model):
     """
     学生表（已报名）
     """
-    customer = models.OneToOneField(verbose_name='客户信息', to='Customer')
+    customer = models.OneToOneField(verbose_name='客户信息', to='Customer', on_delete=models.CASCADE)
 
     username = models.CharField(verbose_name='用户名', max_length=32)
     password = models.CharField(verbose_name='密码', max_length=64)
@@ -229,9 +233,10 @@ class CourseRecord(models.Model):
     """
     上课记录表 （班级记录）
     """
-    class_obj = models.ForeignKey(verbose_name="班级", to="ClassList")
+    class_obj = models.ForeignKey(verbose_name="班级", to="ClassList", on_delete=models.CASCADE)
     day_num = models.IntegerField(verbose_name="节次", help_text=u"此处填写第几节课或第几天课程...,必须为数字")
-    teacher = models.ForeignKey(verbose_name="讲师", to='UserInfo',limit_choices_to={"depart_id__in":[1002,1003]})
+    teacher = models.ForeignKey(verbose_name="讲师", to='UserInfo', limit_choices_to={"depart_id__in": [1002, 1003]},
+                                on_delete=models.CASCADE)
     date = models.DateField(verbose_name="上课日期", auto_now_add=True)
 
     course_title = models.CharField(verbose_name='本节课程标题', max_length=64, blank=True, null=True)
@@ -249,8 +254,8 @@ class StudyRecord(models.Model):
     '''
     学生记录
     '''
-    course_record = models.ForeignKey(verbose_name="第几天课程", to="CourseRecord")
-    student = models.ForeignKey(verbose_name="学员", to='Student')
+    course_record = models.ForeignKey(verbose_name="第几天课程", to="CourseRecord", on_delete=models.CASCADE)
+    student = models.ForeignKey(verbose_name="学员", to='Student', on_delete=models.CASCADE)
     record_choices = (('checked', "已签到"),
                       ('vacate', "请假"),
                       ('late', "迟到"),
@@ -281,26 +286,3 @@ class StudyRecord(models.Model):
 
     def __str__(self):
         return "{0}-{1}".format(self.course_record, self.student)
-
-
-class CustomerDistrbute(models.Model):
-    customer = models.ForeignKey("Customer", related_name="customers")
-    consultant = models.ForeignKey(verbose_name="课程顾问", to="UserInfo", limit_choices_to={"depart_id": 1001})
-    date = models.DateField()
-    status = (
-        (1, "正在跟进"),
-        (2, "已报名"),
-        (3, "三天未跟进"),
-        (4, "15天未成单"),
-    )
-    status = models.IntegerField(choices=status, default=1)
-
-    memo = models.CharField(max_length=255)
-
-    def __str__(self):
-        return self.customer.name+":"+self.consultant.name
-
-
-
-
-

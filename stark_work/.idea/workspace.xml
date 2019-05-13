@@ -2,64 +2,381 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b46007e-f92e-49a7-8c7c-93edb7432c34" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../crm_work/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/crm/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/service/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/service/stark.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/js/jquery-1.12.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/static/js/jquery.cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/add_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/change_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/delete_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/list_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/templates/pop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/utils/page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crm_work/stark/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0002_auto_20190503_1310.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app01/migrations/0003_author_gender.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_s9/crm/migrations/0003_auto_20190513_1434.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/crm/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/migrations/0002_auto_20190509_1635.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/migrations/0003_permission_action.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/service/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/service/permission.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/service/rbac.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/templates/rbac/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/templates/rbac/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/templates/rbac/roles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/templates/rbac/users.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/templatetags/my_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crm_work/rbac/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/crm_s9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/crm_s9.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/dataSources/f418a537-908d-4108-aa2a-e936b94a6fe6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/dataSources/f418a537-908d-4108-aa2a-e936b94a6fe6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../crm_s9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/migrations/0003_customerdistrbute.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../crm_s9/crm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/crm/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../crm_s9/crm_s9/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/crm_s9/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/s9day88.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s9day88/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/crm/stark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/highcharts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/highcharts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/highcharts-3d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/highcharts-3d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/highcharts-3d.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/highcharts-more.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/highcharts.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/accessibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/accessibility.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/accessibility.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/annotations.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/boost-canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/boost-canvas.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/boost-canvas.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/boost.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/boost.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/boost.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/broken-axis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/broken-axis.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/broken-axis.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/bullet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/bullet.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/bullet.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/data.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/drag-panes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/drag-panes.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/drag-panes.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/drilldown.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/export-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/export-data.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/export-data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/exporting.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/funnel.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/gantt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/gantt.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/gantt.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/grid-axis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/grid-axis.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/grid-axis.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/heatmap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/histogram-bellcurve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/histogram-bellcurve.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/histogram-bellcurve.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/item-series.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/item-series.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/item-series.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/no-data-to-display.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/offline-exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/offline-exporting.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/offline-exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/oldie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/oldie.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/oldie.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/overlapping-datalabels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/overlapping-datalabels.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/overlapping-datalabels.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/parallel-coordinates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/parallel-coordinates.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/parallel-coordinates.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/pareto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/pareto.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/pareto.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/pattern-fill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/pattern-fill.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/pattern-fill.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/sankey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/sankey.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/sankey.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/series-label.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/series-label.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/series-label.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/solid-gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/solid-gauge.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/solid-gauge.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/static-scale.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/static-scale.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/static-scale.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/stock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/stock.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/stock.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/streamgraph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/streamgraph.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/streamgraph.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/sunburst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/sunburst.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/sunburst.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/tilemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/tilemap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/tilemap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/treemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/treemap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/treemap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/variable-pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/variable-pie.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/variable-pie.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/variwide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/variwide.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/variwide.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/vector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/vector.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/vector.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/windbarb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/windbarb.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/windbarb.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/wordcloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/wordcloud.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/wordcloud.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/xrange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/xrange.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/modules/xrange.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/avocado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/avocado.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/avocado.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/dark-blue.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/dark-blue.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/dark-green.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/dark-green.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/dark-unica.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/dark-unica.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/dark-unica.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/gray.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/gray.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/grid-light.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/grid-light.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/grid-light.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/grid.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/grid.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/sand-signika.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/sand-signika.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/sand-signika.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/skies.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/skies.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/sunset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/sunset.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/js/themes/sunset.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/themes/dark-unica.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/themes/grid-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/css/themes/sand-signika.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/highcharts-3d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/highcharts-3d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/highcharts-3d.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/highcharts-more.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/highcharts.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/accessibility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/accessibility.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/accessibility.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/annotations.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/boost-canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/boost-canvas.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/boost-canvas.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/boost.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/boost.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/boost.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/broken-axis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/broken-axis.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/broken-axis.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/bullet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/bullet.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/bullet.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/data.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/drag-panes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/drag-panes.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/drag-panes.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/drilldown.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/export-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/export-data.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/export-data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/exporting.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/funnel.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/gantt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/gantt.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/gantt.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/grid-axis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/grid-axis.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/grid-axis.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/heatmap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/histogram-bellcurve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/histogram-bellcurve.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/histogram-bellcurve.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/item-series.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/item-series.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/item-series.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/no-data-to-display.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/offline-exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/offline-exporting.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/offline-exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/oldie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/oldie.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/oldie.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/overlapping-datalabels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/overlapping-datalabels.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/overlapping-datalabels.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/parallel-coordinates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/parallel-coordinates.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/parallel-coordinates.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/pareto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/pareto.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/pareto.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/pattern-fill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/pattern-fill.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/pattern-fill.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/sankey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/sankey.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/sankey.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/series-label.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/series-label.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/series-label.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/solid-gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/solid-gauge.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/solid-gauge.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/static-scale.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/static-scale.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/static-scale.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/stock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/stock.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/stock.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/streamgraph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/streamgraph.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/streamgraph.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/sunburst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/sunburst.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/sunburst.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/tilemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/tilemap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/tilemap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/treemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/treemap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/treemap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/variable-pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/variable-pie.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/variable-pie.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/variwide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/variwide.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/variwide.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/vector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/vector.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/vector.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/windbarb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/windbarb.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/windbarb.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/wordcloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/wordcloud.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/wordcloud.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/xrange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/xrange.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/modules/xrange.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/avocado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/avocado.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/avocado.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/dark-blue.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/dark-blue.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/dark-green.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/dark-green.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/dark-unica.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/dark-unica.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/dark-unica.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/gray.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/gray.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/grid-light.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/grid-light.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/grid-light.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/grid.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/grid.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/sand-signika.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/sand-signika.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/sand-signika.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/skies.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/skies.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/sunset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/sunset.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/crm/static/chart/themes/sunset.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/bootstrap/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/js/jquery-1.12.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/stark/static/js/jquery.cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_s9/stark/static/js/jquery.cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/templates/mycustomer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/templates/public.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_s9/templates/score_view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_work/.idea/crm_work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_work/.idea/crm_work.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_work/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_work/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_work/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_work/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_work/crm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_work/crm/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_work/crm_work/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_work/crm_work/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_work/crm_work/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_work/crm_work/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crm_work/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../crm_work/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/s9day88.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/s9day88.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s9day88/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/s9day88/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s9day88/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/s9day88/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stark/service/stark.py" beforeDir="false" afterPath="$PROJECT_DIR$/stark/service/stark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stark/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/stark/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -232,12 +549,70 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-500823607">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="6" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="s9day88_1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/s9day88/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+              <folding>
+                <element signature="e#641#673#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app01/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4985">
+              <caret line="330" column="8" selection-start-line="330" selection-start-column="8" selection-end-line="330" selection-end-column="8" />
+              <folding>
+                <element signature="e#19#30#0" expanded="true" />
+                <element signature="e#2783#3275#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -303,10 +678,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="497" />
-    <option name="y" value="65" />
-    <option name="width" value="1437" />
-    <option name="height" value="953" />
+    <option name="x" value="338" />
+    <option name="y" value="184" />
+    <option name="width" value="1338" />
+    <option name="height" value="837" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -322,6 +697,21 @@
             <path>
               <item name="stark_work" type="b2602c69:ProjectViewProjectNode" />
               <item name="stark_work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark_work" type="462c0819:PsiDirectoryNode" />
+              <item name="app01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark_work" type="462c0819:PsiDirectoryNode" />
+              <item name="s9day88" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stark_work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stark_work" type="462c0819:PsiDirectoryNode" />
+              <item name="stark" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -455,9 +845,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="398" y="52" width="1149" height="762" extended-state="0" />
+    <frame x="338" y="184" width="1338" height="837" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980916" visible="true" weight="0.16956921" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4980916" visible="true" weight="0.1885759" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5019084" side_tool="true" weight="0.14565827" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -526,9 +917,7 @@
       </provider>
     </entry>
     <entry file="das://ec094b20-1ccb-4cc3-8d41-d402f884973d/schema/main/table/app01_book" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4d5e21d6-5acd-46eb-a58f-556cc900be75/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4d5e21d6-5acd-46eb-a58f-556cc900be75/console.sql" />
     <entry file="das://e84db324-d476-4c4d-a4a9-d348192fcc6e/schema/main/table/app01_authordetail">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -553,34 +942,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/django/contrib/admin/actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="77" column="15" selection-start-line="77" selection-end-line="77" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/django/contrib/admin/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/django/core/checks/registry.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/django/utils/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1462">
-          <caret line="217" column="6" selection-start-line="217" selection-start-column="6" selection-end-line="217" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/python3.6/Lib/site-packages/django/contrib/admin/actions.py" />
+    <entry file="file://D:/python3.6/Lib/site-packages/django/contrib/admin/decorators.py" />
+    <entry file="file://D:/python3.6/Lib/site-packages/django/core/checks/registry.py" />
+    <entry file="file://D:/python3.6/Lib/site-packages/django/utils/functional.py" />
     <entry file="file://$PROJECT_DIR$/stark/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -595,41 +960,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/django/db/models/fields/related_descriptors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3227">
-          <caret line="765" column="20" selection-start-line="765" selection-start-column="17" selection-end-line="765" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/django/db/models/fields/related.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="781" column="36" selection-start-line="781" selection-start-column="27" selection-end-line="781" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/django/contrib/admin/sites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1699770153/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="4304" column="8" selection-start-line="4304" selection-start-column="8" selection-end-line="4304" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/django/contrib/admin/options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="551" column="23" lean-forward="true" selection-start-line="551" selection-start-column="23" selection-end-line="551" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/python3.6/Lib/site-packages/django/db/models/fields/related_descriptors.py" />
+    <entry file="file://D:/python3.6/Lib/site-packages/django/db/models/fields/related.py" />
+    <entry file="file://D:/python3.6/Lib/site-packages/django/contrib/admin/sites.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1699770153/builtins.py" />
+    <entry file="file://D:/python3.6/Lib/site-packages/django/contrib/admin/options.py" />
     <entry file="file://$PROJECT_DIR$/app01/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -665,13 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app01/stark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stark/templates/pop.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -679,13 +1007,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python3.6/Lib/site-packages/django/forms/boundfield.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/python3.6/Lib/site-packages/django/forms/boundfield.py" />
     <entry file="file://$PROJECT_DIR$/stark/templates/list_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-442">
@@ -721,31 +1043,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
+    <entry file="file://$PROJECT_DIR$/stark/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="108" column="79" selection-start-line="108" selection-start-column="79" selection-end-line="108" selection-end-column="79" />
-          <folding>
-            <element signature="e#19#30#0" expanded="true" />
-            <element signature="e#459#877#0" />
-            <element signature="e#922#2449#0" />
-            <element signature="e#2490#2747#0" />
-            <element signature="e#2783#3275#0" />
-            <marker date="1556860802112" expanded="true" signature="9880:9889" ph="..." />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app01/models.py">
+    <entry file="file://$PROJECT_DIR$/app01/stark.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="31" />
+        <state relative-caret-position="76">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stark/service/stark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4985">
+          <caret line="330" column="8" selection-start-line="330" selection-start-column="8" selection-end-line="330" selection-end-column="8" />
+          <folding>
+            <element signature="e#19#30#0" expanded="true" />
+            <element signature="e#2783#3275#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/s9day88/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="418">
           <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding>
             <element signature="e#641#673#0" expanded="true" />
@@ -753,12 +1078,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stark/tests.py">
+    <entry file="file://$PROJECT_DIR$/app01/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="171">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
           <folding>
-            <marker date="1556858885130" expanded="true" signature="70:75" ph="..." />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

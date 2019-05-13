@@ -57,67 +57,11 @@ class CusotmerConfig(ModelStark):
         obj.course.remove(course_id)
         return redirect(self.get_list_url())
 
-
-    def public_customer(self,request):
-
-        # 未报名 且3天未跟进或者15天未成单
-
-        from django.db.models import Q
-        import datetime
-        now=datetime.datetime.now()
-
-
-        '''
-        datetime.datetime
-        datetime.time
-        datetime.date
-        datetime.timedelta(days=7)
-           
-        '''
-        # 三天未跟进 now-last_consult_date>3   --->last_consult_date<now-3
-        # 15天未成单 now-recv_date>15   --->recv_date<now-15
-
-        delta_day3=datetime.timedelta(days=3)
-        delta_day15=datetime.timedelta(days=15)
-        user_id=5
-        customer_list=Customer.objects.filter(Q(last_consult_date__lt=now-delta_day3)|Q(recv_date__lt=now-delta_day15),status=2).exclude(consultant=user_id)
-        print(customer_list)
-        return render(request,"public.html",locals())
-
-    def further(self,request,customer_id):
-
-        user_id=3 # request.session.get("user_id")
-        import datetime
-
-        now=datetime.datetime.now()
-        delta_day3 = datetime.timedelta(days=3)
-        delta_day15 = datetime.timedelta(days=15)
-        from django.db.models import Q
-
-        # 为改客户更改课程顾问，和对应时间
-        ret=Customer.objects.filter(pk=customer_id).filter(Q(last_consult_date__lt=now-delta_day3)|Q(recv_date__lt=now-delta_day15),status=2).update(consultant=user_id,last_consult_date=now,recv_date=now)
-        if not ret:
-            return HttpResponse("已经被跟进了")
-
-        CustomerDistrbute.objects.create(customer_id=customer_id,consultant_id=user_id,date=now,status=1)
-
-
-
-        return HttpResponse("跟进成功")
-
-    def mycustomer(self,request):
-        user_id=2
-        customer_distrbute_list=CustomerDistrbute.objects.filter(consultant=user_id)
-
-        return render(request, "mycustomer.html", locals())
     def extra_url(self):
 
         temp = []
 
         temp.append(url(r"cancel_course/(\d+)/(\d+)", self.cancel_course))
-        temp.append(url(r"public/", self.public_customer))
-        temp.append(url(r"further/(\d+)", self.further))
-        temp.append(url(r"mycustomer/", self.mycustomer))
 
         return temp
 
@@ -133,46 +77,9 @@ class ConsultConfig(ModelStark):
 
 site.register(ConsultRecord, ConsultConfig)
 
-from django.http import JsonResponse
+
 class StudentConfig(ModelStark):
-    def score_view(self,request,sid):
-        if request.is_ajax():
-
-            print(request.GET)
-
-            sid=request.GET.get("sid")
-            cid=request.GET.get("cid")
-
-            study_record_list=StudyRecord.objects.filter(student=sid,course_record__class_obj=cid)
-
-            data_list=[]
-
-            for study_record in study_record_list:
-                day_num=study_record.course_record.day_num
-                data_list.append(["day%s"%day_num,study_record.score])
-            print(data_list)
-            return JsonResponse(data_list,safe=False)
-
-
-        else:
-            student=Student.objects.filter(pk=sid).first()
-            class_list=student.class_list.all()
-
-            return render(request,"score_view.html",locals())
-
-    def extra_url(self):
-        temp = []
-        temp.append(url(r"score_view/(\d+)", self.score_view))
-        return temp
-
-
-
-    def score_show(self,obj=None,header=False):
-        if header:
-            return "查看成绩"
-        return mark_safe("<a href='/stark/crm/student/score_view/%s'>查看成绩</a>"%obj.pk)
-
-    list_display = ["customer", "class_list",score_show]
+    list_display = ["customer", "class_list"]
     list_display_links = ["customer"]
 
 
@@ -218,7 +125,7 @@ class CourseRecordConfig(ModelStark):
 
     def record(self, obj=None, header=False):
         if header:
-            return "学习记录"
+            return "考勤"
         return mark_safe("<a href='/stark/crm/studyrecord/?course_record=%s'>记录</a>" % obj.pk)
 
     def record_score(self, obj=None, header=False):
@@ -257,4 +164,3 @@ class StudyConfig(ModelStark):
 
 
 site.register(StudyRecord, StudyConfig)
-site.register(CustomerDistrbute)
