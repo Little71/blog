@@ -26,7 +26,6 @@ class ShowList(object):
 
 
     def get_filter_linktags(self):
-        print("list_filter:",self.config.list_filter)
         link_dic={}
         import copy
 
@@ -35,19 +34,14 @@ class ShowList(object):
 
             cid=self.request.GET.get(filter_field,0)
 
-            print("filter_field",filter_field) # "publish"
             filter_field_obj=self.config.model._meta.get_field(filter_field)
-            print("filter_field_obj",filter_field_obj)
-            print(type(filter_field_obj))
             from django.db.models.fields.related import ForeignKey
             from django.db.models.fields.related import ManyToManyField
-            print("rel======...",filter_field_obj.rel)
 
             if isinstance(filter_field_obj,ForeignKey) or isinstance(filter_field_obj,ManyToManyField):
-                 data_list=filter_field_obj.rel.to.objects.all()# 【publish1,publish2...】
+                 data_list=filter_field_obj.related_model.objects.all()# 【publish1,publish2...】
             else:
                  data_list=self.config.model.objects.all().values("pk",filter_field)
-                 print("data_list",data_list)
 
 
             temp=[]
@@ -65,7 +59,6 @@ class ShowList(object):
                     text=str(obj)
                     params[filter_field] = pk
                 else: # data_list= [{"pk":1,"title":"go"},....]
-                    print("========")
                     pk=obj.get("pk")
                     text=obj.get(filter_field)
                     params[filter_field] =text
@@ -96,8 +89,6 @@ class ShowList(object):
     def get_header(self):
         # 构建表头
         header_list = []
-        print("header",
-              self.config.new_list_play())  # [checkbox,"pk","name","age",edit ,deletes]     【checkbox ,"__str__", edit ,deletes】
 
         for field in self.config.new_list_play():
 
@@ -124,7 +115,6 @@ class ShowList(object):
             for filed in self.config.new_list_play():  # ["__str__",]      ["pk","name","age",edit]
 
                 if callable(filed):
-                    print("obj-----:",obj)
                     val = filed(self.config, obj)
                 else:
                     try:
@@ -136,7 +126,6 @@ class ShowList(object):
                                 t.append(str(mobj))
                             val=",".join(t)
                         else:
-                            print("====>",field_obj.choices)
                             if field_obj.choices:
                                 val = getattr(obj, "get_"+filed+"_display")
                             else:
@@ -236,14 +225,10 @@ class ModelStark(object):
 
         for bfield in form:
             from django.forms.boundfield import BoundField
-            print(bfield.field) # 字段对象
-            print("name",bfield.name)  # 字段名（字符串）
-            print(type(bfield.field)) # 字段类型
             from django.forms.models import ModelChoiceField
             if isinstance(bfield.field,ModelChoiceField):
                 bfield.is_pop=True
 
-                print("=======>",bfield.field.queryset.model) # 一对多或者多对多字段的关联模型表
 
                 related_model_name=bfield.field.queryset.model._meta.model_name
                 related_app_label=bfield.field.queryset.model._meta.app_label
@@ -297,7 +282,6 @@ class ModelStark(object):
 
     def change_view(self, request, id):
         ModelFormDemo = self.get_modelform_class()
-        print("=====id",id)
         edit_obj = self.model.objects.filter(pk=id).first()
 
         if request.method=="POST":
@@ -308,7 +292,6 @@ class ModelStark(object):
 
             return render(request, "add_view.html", locals())
 
-        print("***********",edit_obj)
         form = ModelFormDemo(instance=edit_obj)
         form = self.get_new_form(form)
 
@@ -334,7 +317,6 @@ class ModelStark(object):
     def get_change_url(self,obj):
         model_name = self.model._meta.model_name
         app_label = self.model._meta.app_label
-        print("obj===========",obj)
         _url = reverse("%s_%s_change" % (app_label, model_name), args=(obj.pk,))
 
         return _url
@@ -390,7 +372,6 @@ class ModelStark(object):
 
     def list_view(self, request):
         if request.method=="POST":  # action
-            print("POST:",request.POST)
             action=request.POST.get("action") # patch_init
             selected_pk=request.POST.getlist("selected_pk")
             action_func=getattr(self,action)
@@ -441,7 +422,6 @@ class ModelStark(object):
 
     @property
     def urls_2(self):
-        print(self.model)
         return self.get_urls_2(), None, None
 
 class StarkSite(object):
